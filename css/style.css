@@ -306,7 +306,7 @@ nav {
 .construction {
     text-align: center;
     font-size: 11px;
-    color: #c5c5c5;
+    color: #c5c5c5 !important;
     margin-top: 30px;
     font-style: italic;
     letter-spacing: 0.5px;
