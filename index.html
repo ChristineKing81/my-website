@@ -13,6 +13,8 @@
     <nav>
         <div class="logo">Inside Bodywork</div>
 
+        <div class="menu-toggle">☰</div>
+
         <ul class="menu">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -61,7 +63,7 @@
 
 </section>
 
-<<section id="how" class="how">
+<section id="how" class="how">
 
     <h2>How I Work</h2>
 
@@ -163,6 +165,7 @@
 <a href="https://www.google.com/maps/place/Kl%C3%B6verv%C3%A4gen+11A,+541+78+V%C3%A4rs%C3%A5s/@58.3523792,14.0446146,17z/data=!3m1!4b1!4m6!3m5!1s0x465baac0f99f1f27:0x1e960738aa9de281!8m2!3d58.3523792!4d14.0471895!16s%2Fg%2F11c244_kmh?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
     📍 Find me on Google Maps
 </a>
+</p>
 
     <p>
             🌿 Follow me on
@@ -173,5 +176,13 @@
 
 </section>
 
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
 </body>
 </html>

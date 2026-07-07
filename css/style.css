@@ -22,15 +22,16 @@ p {
 }
 
 /* ---------- Navigation ---------- */
+/* ---------- Navigation ---------- */
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    background: rgba(248, 246, 242, 0.75);
+    background: rgba(248,246,242,0.75);
     backdrop-filter: blur(8px);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    z-index: 1000;
 }
 
 nav {
@@ -40,9 +41,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
-    z-index: 1001;
 }
 
 .logo {
@@ -59,15 +58,55 @@ nav {
     padding: 0;
 }
 
+.menu li {
+    list-style: none;
+}
+
 .menu a {
     text-decoration: none;
     color: #2F2F2F;
     font-size: 17px;
-    transition: color 0.3s ease;
+    transition: color .3s;
 }
 
 .menu a:hover {
     color: #6F8A69;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+
+    nav{
+        padding:18px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        right:0;
+        width:100%;
+        background:#f8f5ef;
+        flex-direction:column;
+        align-items:center;
+        gap:22px;
+        padding:25px 0;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .menu.active{
+        display:flex;
+    }
 }
 /* ---------- Hero ---------- */
 
@@ -206,8 +245,8 @@ nav {
 }
 
 /* ---------- Mobile ---------- */
+/* Hamburger menu */
 @media (max-width: 768px) {
-
 .about-container {
     display: flex;
     flex-direction: column;
