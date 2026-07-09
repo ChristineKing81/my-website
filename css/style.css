@@ -121,6 +121,14 @@ nav {
 }
 @media (max-width:768px){
 
+.dropdown.open .submenu {
+    display: block;
+}
+
+.dropdown > a {
+    cursor: pointer;
+}    
+
     nav{
         padding:18px 20px;
     }
@@ -147,6 +155,25 @@ nav {
     .menu.active{
         display:flex;
     }
+}
+
+.dropdown {
+    width: 100%;
+    text-align: center;
+}
+
+.submenu {
+    position: static;
+    display: none;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.dropdown.open .submenu {
+    display: block;
 }
 /* ---------- Hero ---------- */
 
@@ -355,16 +382,18 @@ nav {
     max-width: 900px;
     margin: 0 auto;
     padding: 80px 20px;
+    scroll-margin-top: 120px;
 }
 
 .therapy-image {
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .therapy-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: 12px;
 }
@@ -377,4 +406,12 @@ nav {
 .therapy-content p {
     line-height: 1.8;
     margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+
+    .dropdown.open .submenu {
+        display: block;
+    }
+
 }
