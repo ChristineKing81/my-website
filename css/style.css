@@ -351,3 +351,30 @@ nav {
     font-style: italic;
     letter-spacing: 0.5px;
 }
+.therapy-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.therapy-image {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.therapy-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.therapy-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.therapy-content p {
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
