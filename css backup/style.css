@@ -415,39 +415,3 @@ nav {
     }
 
 }
-
-/* ===== Mobile submenu styling ===== */
-@media (max-width: 768px) {
-
-    .submenu {
-        width: 90%;
-        margin: 10px auto 0;
-        padding: 8px 0;
-        background: #fff;
-        border-radius: 14px;
-        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    }
-
-    .submenu li {
-        width: 100%;
-    }
-
-    .submenu a {
-        display: block;
-        padding: 14px 18px;
-        text-align: center;
-        font-size: 16px;
-        color: #444;
-        border-bottom: 1px solid #ececec;
-    }
-
-    .submenu li:last-child a {
-        border-bottom: none;
-    }
-
-    .submenu a:hover {
-        background: #f8f5ef;
-        color: #6F8A69;
-    }
-
-}
