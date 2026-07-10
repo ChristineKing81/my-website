@@ -227,7 +227,7 @@ nav {
 }
 
 .about {
-    padding: 120px 40px;
+    padding: 30px 40px;
     background: #F7F2EB;
 }
 
@@ -450,4 +450,40 @@ nav {
         color: #6F8A69;
     }
 
+}
+.blog-post{
+    max-width:900px;
+    margin:80px auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.blog-image {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+.blog-post h2{
+    margin:35px 40px 10px;
+    font-size:42px;
+}
+
+.blog-date{
+    margin:0 40px 20px;
+    color:#888;
+    font-style:italic;
+}
+
+.blog-post p{
+    margin:0 40px 30px;
+    line-height:1.8;
+}
+
+.blog-post .button{
+    margin:0 40px 40px;
+    display:inline-block;
 }
