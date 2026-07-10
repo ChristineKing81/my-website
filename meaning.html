@@ -14,14 +14,36 @@
     <nav>
         <div class="logo">Inside Bodywork</div>
 
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Me</a></li>
-            <li><a href="#">Individual Sessions</a></li>
-            <li><a href="#">Yoga & Qigong</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <div class="menu-toggle">☰</div>
+
+<ul class="menu">
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#about">About Me</a></li>
+
+    <li class="dropdown">
+        <a href="#">Individual Sessions ▾</a>
+        <ul class="submenu">
+            <li><a href="#craniosacral">Craniosacral Therapy</a></li>
+            <li><a href="#">Belief System Coaching</a></li>
+            <li><a href="#">Insomnia Support</a></li>
         </ul>
+    </li>
+
+    <li class="dropdown">
+        <a href="#">Yoga & Qigong ▾</a>
+        <ul class="submenu">
+            <li><a href="#">Weekly Classes</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Retreats</a></li>
+        </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</ul>
     </nav>
 </header>
 
@@ -65,42 +87,7 @@
 
 </section>
 </section>
-<header>
-    <nav>
-        <div class="logo">Inside Bodywork</div>
 
-        <div class="menu-toggle">☰</div>
-
-<ul class="menu">
-    <li><a href="#home">Home</a></li>
-
-    <li><a href="#about">About Me</a></li>
-
-    <li class="dropdown">
-        <a href="#">Individual Sessions ▾</a>
-        <ul class="submenu">
-            <li><a href="#craniosacral">Craniosacral Therapy</a></li>
-            <li><a href="#">Belief System Coaching</a></li>
-            <li><a href="#">Insomnia Support</a></li>
-        </ul>
-    </li>
-
-    <li class="dropdown">
-        <a href="#">Yoga & Qigong ▾</a>
-        <ul class="submenu">
-            <li><a href="#">Weekly Classes</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Retreats</a></li>
-        </ul>
-    </li>
-
-    <li><a href="blog.html">Blog</a></li>
-
-    <li><a href="#contact">Contact</a></li>
-</ul>
-</ul>
-    </nav>
-</header>
 <script>
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
