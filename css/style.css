@@ -487,3 +487,20 @@ padding: 30px 40px;
     margin:0 40px 40px;
     display:inline-block;
 }
+
+.about-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #8fa89a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #718c7e;
+    transform: translateY(-2px);
+}
