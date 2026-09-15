@@ -274,7 +274,7 @@ document.querySelectorAll(".submenu a").forEach(link => {
     });
 });
 
-document.querySelectorAll(".menu a").forEach(link => {
+document.querySelectorAll(".menu > li:not(.dropdown) > a").forEach(link => {
     link.addEventListener("click", () => {
         menu.classList.remove("active");
     });
