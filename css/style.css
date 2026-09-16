@@ -535,9 +535,10 @@ padding: 30px 40px;
 
 .cv-page .cv-intro {
     text-align: left;
-    max-width: 850px;
-    margin: 30px 0 10px 0;
     font-size: 17px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .cv-page p {
