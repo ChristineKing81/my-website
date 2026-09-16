@@ -514,25 +514,38 @@ padding: 30px 40px;
 
 .cv-page h1 {
     text-align: center;
+    font-size: 48px;
+    margin-bottom: 25px;
 }
 
 .cv-page h2 {
     text-align: left;
+    font-size: 28px;
     margin-top: 50px;
+    margin-bottom: 25px;
+        text-decoration: underline;
 }
 
 .cv-page h3 {
     text-align: left;
+    font-size: 22px;
     margin-top: 35px;
+    margin-bottom: 18px;
 }
 
 .cv-page .cv-intro {
     text-align: left;
     max-width: 850px;
     margin: 30px 0 10px 0;
+    font-size: 17px;
 }
 
 .cv-page p {
     text-align: left;
+    font-size: 16px;
     line-height: 1.7;
+    margin-bottom: 18px;
+}
+.cv-page h2.cv-subtitle {
+    text-decoration: none !important;
 }
