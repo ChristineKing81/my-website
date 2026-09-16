@@ -545,8 +545,12 @@ padding: 30px 40px;
     text-align: left;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 8px;
+.cv-page p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+}
 }
 .cv-page h2.cv-subtitle {
     text-decoration: none !important;
