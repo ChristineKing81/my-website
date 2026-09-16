@@ -558,3 +558,14 @@ padding: 30px 40px;
         box-sizing: border-box;
     }
 }
+@media (max-width: 768px) {
+    .cv-page {
+        padding: 0 20px;
+    }
+
+    .cv-page .cv-intro {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
