@@ -504,3 +504,35 @@ padding: 30px 40px;
     background-color: #718c7e;
     transform: translateY(-2px);
 }
+/* CV page */
+.cv-page {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.cv-page h1 {
+    text-align: center;
+}
+
+.cv-page h2 {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.cv-page h3 {
+    text-align: left;
+    margin-top: 35px;
+}
+
+.cv-page .cv-intro {
+    text-align: left;
+    max-width: 850px;
+    margin: 30px 0 10px 0;
+}
+
+.cv-page p {
+    text-align: left;
+    line-height: 1.7;
+}
