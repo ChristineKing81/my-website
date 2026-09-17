@@ -567,3 +567,16 @@ padding: 30px 40px;
         box-sizing: border-box;
     }
 }
+/* Homepage typography adjustments */
+
+.hero h1 {
+    font-size: 58px;
+}
+
+.about h2 {
+    font-size: 36px;
+}
+
+section h2 {
+    font-size: 36px;
+}
