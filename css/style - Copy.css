@@ -22,6 +22,7 @@ p {
 }
 
 /* ---------- Navigation ---------- */
+/* ---------- Navigation ---------- */
 
 header {
     position: fixed;
@@ -77,7 +78,6 @@ nav {
     font-size: 32px;
     cursor: pointer;
 }
-
 /* ---------- Dropdown menu ---------- */
 
 .dropdown {
@@ -119,84 +119,62 @@ nav {
 .dropdown:hover .submenu {
     display: block;
 }
+@media (max-width:768px){
 
-/* ---------- Mobile navigation ---------- */
+.dropdown.open .submenu {
+    display: block;
+}
 
-@media (max-width: 768px) {
+.dropdown > a {
+    cursor: pointer;
+}    
 
-    nav {
-        padding: 18px 20px;
+    nav{
+        padding:18px 20px;
     }
 
-    .menu-toggle {
-        display: block;
+    .menu-toggle{
+        display:block;
     }
 
-    .menu {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background: #f8f5ef;
-        flex-direction: column;
-        align-items: center;
-        gap: 22px;
-        padding: 25px 0;
-        box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    .menu{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        right:0;
+        width:100%;
+        background:#f8f5ef;
+        flex-direction:column;
+        align-items:center;
+        gap:22px;
+        padding:25px 0;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
     }
 
-    .menu.active {
-        display: flex;
-    }
-
-    .dropdown {
-        width: 100%;
-        text-align: center;
-    }
-
-    .dropdown.open .submenu {
-        display: block;
-    }
-
-    .dropdown > a {
-        cursor: pointer;
-    }
-
-    .submenu {
-        position: static;
-        width: 90%;
-        margin: 10px auto 0;
-        padding: 8px 0;
-        background: #fff;
-        border-radius: 14px;
-        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    }
-
-    .submenu li {
-        width: 100%;
-    }
-
-    .submenu a {
-        display: block;
-        padding: 14px 18px;
-        text-align: center;
-        font-size: 16px;
-        color: #444;
-        border-bottom: 1px solid #ececec;
-    }
-
-    .submenu li:last-child a {
-        border-bottom: none;
-    }
-
-    .submenu a:hover {
-        background: #f8f5ef;
-        color: #6F8A69;
+    .menu.active{
+        display:flex;
     }
 }
 
+.dropdown {
+    width: 100%;
+    text-align: center;
+}
+
+.submenu {
+    position: static;
+    display: none;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.dropdown.open .submenu {
+    display: block;
+}
 /* ---------- Hero ---------- */
 
 .hero {
@@ -205,12 +183,15 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     text-align: center;
     color: white;
+
     position: relative;
 }
 
@@ -229,10 +210,6 @@ nav {
     z-index: 2;
 }
 
-.hero h1 {
-    font-size: 40px;
-}
-
 .button {
     display: inline-block;
     margin-top: 35px;
@@ -249,16 +226,14 @@ nav {
     background: #5b7356;
 }
 
-/* ---------- About ---------- */
-
 .about {
-    padding: 30px 40px;
+padding: 30px 40px;
     background: #F7F2EB;
 }
 
 .about h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 42px;
     margin-bottom: 30px;
 }
 
@@ -298,7 +273,7 @@ nav {
 }
 
 .how h2 {
-    font-size: 32px;
+    font-size: 38px;
     margin-bottom: 70px;
 }
 
@@ -336,41 +311,40 @@ nav {
     line-height: 1.8;
 }
 
-/* ---------- Mobile homepage ---------- */
-
+/* ---------- Mobile ---------- */
+/* Hamburger menu */
 @media (max-width: 768px) {
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
+}
 
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        width: 100%;
-        max-width: 100%;
-    }
+.about-image {
+    margin-bottom: 30px;
+}
 
-    .about-image {
-        margin-bottom: 30px;
-    }
+.about-image img {
+    width: 180px;
+    margin-top: 40px;
+}
 
-    .about-image img {
-        width: 180px;
-        margin-top: 40px;
-    }
+.about-text {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
-    .about-text {
-        flex: none;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    .about p {
-        width: auto;
-        max-width: 100%;
-        font-size: 22px;
-    }
+.about p {
+    width: auto;
+    max-width: 100%;
+    font-size: 22px;
+}
 
     .cards {
         flex-direction: column;
@@ -383,7 +357,7 @@ nav {
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 52px;
     }
 
     .hero p {
@@ -396,9 +370,6 @@ nav {
         padding: 18px 30px;
     }
 }
-
-/* ---------- Construction message ---------- */
-
 .construction {
     text-align: center;
     font-size: 20px;
@@ -407,9 +378,6 @@ nav {
     font-style: italic;
     letter-spacing: 0.5px;
 }
-
-/* ---------- Therapy section ---------- */
-
 .therapy-section {
     max-width: 900px;
     margin: 0 auto;
@@ -433,7 +401,6 @@ nav {
 .therapy-content h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 28px;
 }
 
 .therapy-content p {
@@ -441,15 +408,56 @@ nav {
     margin-bottom: 22px;
 }
 
-/* ---------- Blog ---------- */
+@media (max-width: 768px) {
 
-.blog-post {
-    max-width: 900px;
-    margin: 80px auto;
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    .dropdown.open .submenu {
+        display: block;
+    }
+
+}
+
+/* ===== Mobile submenu styling ===== */
+@media (max-width: 768px) {
+
+    .submenu {
+        width: 90%;
+        margin: 10px auto 0;
+        padding: 8px 0;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    .submenu li {
+        width: 100%;
+    }
+
+    .submenu a {
+        display: block;
+        padding: 14px 18px;
+        text-align: center;
+        font-size: 16px;
+        color: #444;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .submenu li:last-child a {
+        border-bottom: none;
+    }
+
+    .submenu a:hover {
+        background: #f8f5ef;
+        color: #6F8A69;
+    }
+
+}
+.blog-post{
+    max-width:900px;
+    margin:80px auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .blog-image {
@@ -459,28 +467,26 @@ nav {
     border-radius: 12px;
 }
 
-.blog-post h2 {
-    margin: 35px 40px 10px;
-    font-size: 42px;
+.blog-post h2{
+    margin:35px 40px 10px;
+    font-size:42px;
 }
 
-.blog-date {
-    margin: 0 40px 20px;
-    color: #888;
-    font-style: italic;
+.blog-date{
+    margin:0 40px 20px;
+    color:#888;
+    font-style:italic;
 }
 
-.blog-post p {
-    margin: 0 40px 30px;
-    line-height: 1.8;
+.blog-post p{
+    margin:0 40px 30px;
+    line-height:1.8;
 }
 
-.blog-post .button {
-    margin: 0 40px 40px;
-    display: inline-block;
+.blog-post .button{
+    margin:0 40px 40px;
+    display:inline-block;
 }
-
-/* ---------- About / CV button ---------- */
 
 .about-button {
     display: inline-block;
@@ -498,9 +504,7 @@ nav {
     background-color: #718c7e;
     transform: translateY(-2px);
 }
-
-/* ---------- CV page ---------- */
-
+/* CV page */
 .cv-page {
     max-width: 900px;
     margin: 60px auto;
@@ -519,12 +523,7 @@ nav {
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 25px;
-    text-decoration: underline;
-}
-
-.cv-page h2.cv-subtitle {
-    text-decoration: none !important;
-    font-size: 21px;
+        text-decoration: underline;
 }
 
 .cv-page h3 {
@@ -541,18 +540,24 @@ nav {
     margin-top: 0;
     margin-bottom: 8px;
 }
-
 .cv-page p {
     text-align: left;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 0 8px 0;
 }
-
-/* ---------- CV mobile ---------- */
-
+.cv-page h2.cv-subtitle {
+    text-decoration: none !important;
+    font-size: 21px;
+}
 @media (max-width: 768px) {
-
+    .cv-page .cv-intro {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 768px) {
     .cv-page {
         padding: 0 20px;
     }
@@ -562,8 +567,16 @@ nav {
         max-width: 100%;
         box-sizing: border-box;
     }
+/* Homepage typography adjustments */
+
+.hero h1 {
+    font-size: 52px;
 }
-.therapy-title {
-    font-size: 32px;
-    font-weight: normal;
+
+.about h2 {
+    font-size: 36px;
+}
+
+section h2 {
+    font-size: 36px;
 }
