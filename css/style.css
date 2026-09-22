@@ -593,3 +593,58 @@ nav {
 .approach-page .about-button {
     margin-top: 30px;
 }
+/* My Offerings */
+
+.offerings {
+    padding: 100px 40px;
+    background: #f5f2eb;
+    text-align: center;
+}
+
+.offerings h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.offering-cards {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.offering-card {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.offering-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 70%;
+    border-radius: 14px;
+}
+
+.offering-card h3 {
+    font-size: 26px;
+    font-weight: normal;
+    margin: 22px 0 15px;
+}
+
+.offering-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.offering-link {
+    color: #607b68;
+    text-decoration: none;
+    font-weight: bold;
+}
