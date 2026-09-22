@@ -654,7 +654,7 @@ nav {
     .offering-cards {
         grid-template-columns: 1fr;
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
