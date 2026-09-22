@@ -662,4 +662,33 @@ nav {
         min-width: 0;
     }
 
+    .approach-page p {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .approach-page h1 {
+        font-size: 32px;
+    }
+ .hero {
+    padding-top: 80px;
+    box-sizing: border-box;
+}   
+
+}
+.contact a {
+    color: #607b68;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #4f6856;
+}
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
 }
