@@ -648,3 +648,10 @@ nav {
     text-decoration: none;
     font-weight: bold;
 }
+@media (max-width: 600px) {
+
+    .offering-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
