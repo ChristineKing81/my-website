@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Christine King | Yoga · Qi Gong · Meditation</title>
+
+	<style>
+		* { box-sizing: border-box; }
+		body { margin: 0; background: #f5f2eb; color: #333; font-family: Georgia, serif; }
+		header { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 94%; max-width: 1200px; z-index: 10; background: rgba(248, 246, 242, .92); border-radius: 0 0 35px 35px; }
+		nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 28px; }
+		.logo { font-size: 18px; color: #444; }
+		.menu { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+		.menu a { color: #444; text-decoration: none; font-size: 13px; }
+		.menu a:hover { color: #68785e; }
+		.hero { min-height: 560px; position: relative; background-image: linear-gradient(to right, rgba(248,246,239,.82), rgba(248,246,239,.15)), url("images/sea.jpg"); background-size: cover; background-position: center; display: flex; align-items: center; }
+		.hero-content { width: 90%; max-width: 1150px; margin: 0 auto; padding-top: 45px; }
+		.hero h1 { font-size: 48px; font-weight: normal; line-height: 1.05; margin: 0 0 18px; color: #333d32; max-width: 430px; }
+		.hero p { max-width: 360px; font-size: 15px; line-height: 1.5; margin: 0 0 22px; }
+		.button { display: inline-block; background: #7d8b70; color: white; text-decoration: none; padding: 12px 22px; font-size: 13px; border-radius: 3px; }
+		.button:hover { background: #68775d; }
+		.services { display: grid; grid-template-columns: repeat(4, 1fr); background: #f7f4ed; padding: 28px 30px 25px; }
+		.service { text-align: center; padding: 8px 25px; border-right: 1px solid #ddd9d0; }
+		.service:last-child { border-right: none; }
+		.service-icon { height: 42px; font-size: 31px; color: #77856c; margin-bottom: 8px; }
+		.service h2 { font-size: 17px; font-weight: normal; margin: 0 0 10px; color: #333; }
+		.service p { font-size: 12px; line-height: 1.45; max-width: 160px; margin: auto; }
+		.quote { background: #899182; color: white; text-align: center; padding: 12px 20px; font-size: 13px; font-style: italic; }
+		.about { max-width: 1000px; margin: 0 auto; padding: 90px 40px; text-align: center; }
+		.about h2 { font-size: 34px; font-weight: normal; margin-bottom: 20px; }
+		.about p { max-width: 650px; margin: 0 auto 25px; line-height: 1.7; font-size: 17px; }
+		@media (max-width: 768px) {
+			header { width: 100%; border-radius: 0; }
+			nav { padding: 14px 18px; }
+			.menu { gap: 12px; }
+			.menu a { font-size: 11px; }
+			.hero { min-height: 600px; background-position: 62% center; }
+			.hero-content { padding-top: 80px; }
+			.hero h1 { font-size: 39px; max-width: 300px; }
+			.hero p { font-size: 14px; max-width: 290px; }
+			.services { grid-template-columns: repeat(2, 1fr); padding: 20px 10px; }
+			.service { padding: 15px 10px; border-right: none; border-bottom: 1px solid #ddd9d0; }
+			.service:nth-child(3), .service:nth-child(4) { border-bottom: none; }
+			.service h2 { font-size: 16px; }
+			.about { padding: 60px 25px; }
+		}
+	</style>
+</head>
+<body>
+	<header><nav>
+		<div class="logo">Christine King</div>
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="#services">Offerings</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav></header>
+
+	<section class="hero"><div class="hero-content">
+		<h1>Find your way<br>back to yourself</h1>
+		<p>Yoga, Qi Gong, Meditation and Craniosacral Therapy for a calmer mind, a healthier body and a more balanced life.</p>
+		<a href="#services" class="button">Explore my offerings</a>
+	</div></section>
+
+	<section id="services" class="services">
+		<div class="service"><div class="service-icon">♧</div><h2>Yoga</h2><p>Move, breathe and feel at home in your body.</p></div>
+		<div class="service"><div class="service-icon">〰</div><h2>Qi Gong</h2><p>Cultivate energy, balance and inner calm.</p></div>
+		<div class="service"><div class="service-icon">♧</div><h2>Meditation</h2><p>Find stillness and clarity in everyday life.</p></div>
+		<div class="service"><div class="service-icon">◎</div><h2>Craniosacral Therapy</h2><p>Support your body's natural ability to heal.</p></div>
+	</section>
+
+	<section class="quote">"A calmer mind. A healthier body. A more balanced life."</section>
+
+	<section class="about">
+		<h2>About Me</h2>
+		<p>My work is about creating a safe space where you can reconnect with yourself through presence, gentle guidance and body awareness.</p>
+		<a href="about.html" class="button">Read more about me</a>
+	</section>
+</body>
+</html>
