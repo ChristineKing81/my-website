@@ -863,3 +863,35 @@ nav {
 .contact > p:first-of-type {
     font-size: 1rem;
 }
+.contact .contact-details {
+    max-width: 620px;
+    margin: 25px auto 0;
+    text-align: left;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.contact .contact-details p {
+    margin: 4px 0;
+}
+/* Final contact details styling */
+
+.contact .contact-details {
+    max-width: 620px !important;
+    margin: 25px auto 0 !important;
+    text-align: left !important;
+    font-size: 1.05rem !important;
+    line-height: 1.4 !important;
+}
+
+.contact .contact-details p {
+    margin: 2px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    font-size: 1.05rem !important;
+    line-height: 1.4 !important;
+}
+
+.contact .contact-details a {
+    font-size: 1.05rem !important;
+}
