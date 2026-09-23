@@ -902,3 +902,9 @@ nav {
 .hero .button {
     transform: translateY(50px);
 }
+@media (max-width: 600px) {
+    .hero > p:not(.construction) {
+        position: relative;
+        top: -30px;
+    }
+}
