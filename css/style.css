@@ -895,3 +895,10 @@ nav {
 .contact .contact-details a {
     font-size: 1.05rem !important;
 }
+.hero > p:not(.construction) {
+    transform: translateY(-60px);
+}
+
+.hero .button {
+    transform: translateY(50px);
+}
