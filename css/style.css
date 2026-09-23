@@ -774,7 +774,6 @@ nav {
 
 .contact > p:first-of-type {
     margin-bottom: 45px;
-    font-size: 1.1rem;
 }
 
 .contact-form {
@@ -860,4 +859,7 @@ nav {
 .contact .contact-details p {
     text-align: left !important;
     margin: 10px 0;
+}
+.contact > p:first-of-type {
+    font-size: 1rem;
 }
