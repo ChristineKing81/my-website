@@ -914,3 +914,13 @@ nav {
         margin: 0 auto;
     }
 }
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-details {
+    max-width: 300px;
+    margin: 30px auto 0;
+    text-align: left;
+}
