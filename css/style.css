@@ -933,3 +933,8 @@ nav {
 .more-about-me-page {
     text-align: center;
 }
+.cv-page h1 {
+    font-size: 42px;
+    font-weight: normal;
+    text-align: left;
+}
