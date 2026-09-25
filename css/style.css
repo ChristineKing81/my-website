@@ -17,7 +17,7 @@ p {
     max-width: 90%;
     margin: 30px auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.7;
 }
 
@@ -369,7 +369,7 @@ nav {
     .about p {
         width: auto;
         max-width: 100%;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .cards {
@@ -388,7 +388,7 @@ nav {
 
     .hero p {
         width: 90%;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .button {
@@ -938,4 +938,7 @@ nav {
     font-weight: normal;
     text-align: left;
     margin-left: 0;
+}
+.about-text p {
+    margin-bottom: 25px;
 }
