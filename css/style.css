@@ -218,7 +218,6 @@ nav {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
     pointer-events: none;
 }
 
@@ -266,7 +265,7 @@ nav {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.8;
 }
 
