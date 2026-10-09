@@ -895,7 +895,7 @@ nav {
     font-size: 1.05rem !important;
 }
 .hero > p:not(.construction) {
-    transform: translateY(-120px);
+    transform: translateY(-130px);
 }
 
 .hero .button {
