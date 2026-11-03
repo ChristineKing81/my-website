@@ -941,3 +941,117 @@ nav {
 .about-text p {
     margin-bottom: 25px;
 }
+.orange-button {
+    background-color: #D98255;
+    color: white;
+}
+
+.orange-button:hover {
+    background-color: #C46D43;
+}
+
+/* About section - centered profile photo */
+
+.about-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.about-image img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+/* Center all text in the Yin Yoga page */
+
+.yin-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.yin-container section {
+    text-align: center;
+}
+
+.yin-page h2 {
+    text-align: center;
+}
+
+.yin-page p {
+    text-align: center;
+}
+
+/* Smaller, centered photo collage */
+
+.yin-collage {
+    display: block;
+    width: 100%;
+    max-width: 638px;
+    margin: 30px auto;
+}
+
+.yin-collage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.yin-booking {
+    text-align: center;
+    max-width: 600px;
+    margin: 25px auto 0;
+    padding: 25px 15px;
+    background: #e5e9e2;
+    border-radius: 16px;
+}
+
+.yin-container section {
+    text-align: center;
+}
+
+.yin-container h2 {
+    text-align: center;
+}
+
+
+.yin-collage img {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: fill;
+    border-radius: 15px;
+}
+/* Yin Yoga – placering av text */
+.yin-hero {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 15px auto 30px;
+    text-align: center;
+    position: relative;
+    clear: both;
+}
+
+.yin-hero h1,
+.yin-hero h2,
+.yin-hero p {
+    text-align: center;
+}
