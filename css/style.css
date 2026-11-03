@@ -949,7 +949,10 @@ nav {
 .orange-button:hover {
     background-color: #C46D43;
 }
-
+a.button.orange-button {
+    background-color: #D98255 !important;
+    color: white !important;
+}
 /* About section - centered profile photo */
 
 .about-container {
